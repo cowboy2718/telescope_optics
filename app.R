@@ -62,7 +62,6 @@ ui <- fluidPage(
     
   }
     
-  
 server <- function(input, output) {
   output$focal_ratio <- renderPrint({f_ratio(input$obj_dia,input$obj_fl)})
   output$magnifcation <- renderPrint({mag(input$obj_fl,input$eye_fl)})
